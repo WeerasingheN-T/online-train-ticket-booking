@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_image"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:scaleType="centerCrop"
+    tools:context=".TrainController.ScheduleView">
+
+    <LinearLayout
+        android:id="@+id/txt_user"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_titleName"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:foregroundGravity="center_vertical|center"
+            android:text="Hey Madhura!"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:clickable="true"
+            android:padding="15dp"
+            app:backgroundTint="#ffffff"
+            app:borderWidth="0dp"
+            app:elevation="1dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_baseline_login_24"
+            app:tint="@android:color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:text="Train Schedule"
+        android:textAlignment="viewStart"
+        android:textColor="#720000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="390dp"
+        android:layout_height="590dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
