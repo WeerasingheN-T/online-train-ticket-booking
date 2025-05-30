@@ -1,5 +1,9 @@
 # online-train-ticket-booking
 
+* This is a android mobile application for an Online Train Ticket Reservation Platform (For a virtual organization) which facilates users to register to the app, login, view Train Schedules, made reservations for ticket, view created reservations, cancel reservations if they want, manage their user profile by updating profile or removing their account.
+* Admin panel of the app can add Train schedules, edit schedule, delete a schedule and view passenger reservations.
+* Technologies used- Java, Android SDK, SQLite Database
+
 # Welcome Screen
 ![Alt text](https://drive.google.com/uc?id=1ViRisEnpB9sB4iLeyI2_dUf5kDiCihQ2)
 
